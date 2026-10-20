@@ -18,6 +18,31 @@ realistic shape of this business is: free listing on the platform for discovery,
 checkout on Gumroad or Lemon Squeezy, and the paid layer is either a private repo, a
 license key, a bigger pack, or a hosted tier.
 
+## Strategic role: marketing for Steerwell
+
+Decided 2026-10-20 (see DECISIONS.md). This plan is not primarily a sales business. It is
+the public face of Steerwell, the owner's AI consulting company, and the top of the funnel
+for both consulting engagements and the plan 01 data product. The repository is public.
+
+What that changes:
+
+- **Success metric.** Stars, installs, inbound consulting enquiries, and referrals to the
+  data product count more than Gumroad sales. Track all four from day one.
+- **Quality bar goes up.** The repo is a portfolio piece. Every skill ships with evals, a
+  README a stranger can follow, and a changelog. Half-finished experiments live on a
+  branch, not in the main tree.
+- **Branding.** Steerwell name and a one-paragraph "who built this and what we do" in the
+  README, with a contact path for consulting. No hard sell inside the artifacts.
+- **Boundary with plan 01.** Nothing in the public repo may expose plan 01's source list,
+  parsers, or schemas. Shared tooling that is safe to publish (scheduler patterns,
+  structured-output helpers, a change-detection skill) belongs here. The data pipeline
+  itself stays private.
+- **Paid packs become secondary.** They still make sense where a buyer wants more than the
+  free core, but pricing and checkout decisions can wait until the free repo has traction.
+
+The rest of this plan is kept as researched. Read the revenue and channel sections as
+"how to monetise if the audience shows up", not as the primary goal.
+
 ## Why it is the most passive option
 
 - Zero running cost. Customers run the agent on their own accounts and API keys.
@@ -307,6 +332,14 @@ enforcement. Compete on updates and evals. This is not legal advice.
 
 ## Revenue model
 
+Ordered by importance under the Steerwell marketing decision:
+
+1. **Consulting leads.** A public repo that demonstrates agent engineering done properly
+   is the cheapest credible proof for a consulting buyer. One engagement a quarter sourced
+   through the repo outweighs any realistic template revenue below.
+2. **Plan 01 referrals.** README and skill output link to the data product where relevant.
+3. **Paid packs and sponsorship.** The original research below, now a secondary line.
+
 - One-off purchase for templates and packs. $19 to $49 is the observed band.
 - Free tier plus paid tier for MCP servers and skills: free server on the registry, paid
   hosted endpoint, bigger limits, or extra tools, billed by subscription on Lemon Squeezy.
@@ -410,13 +443,22 @@ These need the owner's input. Everything else above has a researched default.
 2. **Plugin-plus-paid-pack or Notion system first.** Both score well. Plugin suits a
    developer audience and keeps the customer list; Notion suits a non-developer audience
    and handles checkout and tax for you.
-3. **Public repo or not.** A directory listing requires a public repo for the free core.
-   Decide whether the paid pack is a private repo (sold via license key) or a bigger
-   bundle on the same checkout.
+3. **Decided: public repo.** The free core is public under the Steerwell name. If a paid
+   pack is added later it is a private repo sold via license key.
 4. **Checkout provider.** Lemon Squeezy is cheaper and issues license keys; Gumroad has
    Discover traffic at a 30% cost. Pick one and do not split the customer list.
 5. **License for the free core.** Apache-2.0 for maximum adoption, or FSL to block
-   resellers. This is a values call as much as a business one.
+   resellers. For a marketing repo adoption matters more than resale protection, so the
+   default is Apache-2.0 unless the owner objects.
+6. **What the first artifact demonstrates.** For a consulting funnel the artifact should
+   show a capability Steerwell sells. Candidates: a structured-extraction skill with
+   evals, a change-detection MCP server, or a scheduling and spend-cap pattern. All three
+   are also reusable inside plan 01 without exposing it.
+7. **Repository location and name.** A new repo under a Steerwell organisation, or this
+   one? The plans directory and decision log probably stay private, which argues for a
+   separate public repo.
+8. **Consulting call to action.** How a reader goes from README to a conversation: a
+   booking link, an email, or a form on the Steerwell site.
 
 ## Sources
 

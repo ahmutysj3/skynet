@@ -3,12 +3,14 @@
 General plans for the "closest to passive" agentic business ideas. Each plan is a
 starting point meant to be expanded, not a finished spec.
 
-| Plan | Idea | Passivity | Upfront effort |
-|------|------|-----------|----------------|
-| [01-niche-data-products.md](01-niche-data-products.md) | Agent collects a niche dataset nightly, sold by subscription or API | High | Medium |
-| [02-programmatic-content-sites.md](02-programmatic-content-sites.md) | Agent generates and maintains long-tail reference pages, monetised with ads and affiliates | High | Medium to high |
-| [03-marketplace-templates-and-skills.md](03-marketplace-templates-and-skills.md) | Package agents as sellable skills, MCP servers, and automation templates | Very high | Low to medium |
-| [04-agent-generated-digital-products.md](04-agent-generated-digital-products.md) | Agent pipeline produces digital goods sold on marketplaces | Very high | Low |
+| Plan | Idea | Passivity | Upfront effort | Status |
+|------|------|-----------|----------------|--------|
+| [01-niche-data-products.md](01-niche-data-products.md) | Agent collects a niche dataset nightly, sold by subscription or API | High | Medium | **Active.** Revenue business |
+| [02-programmatic-content-sites.md](02-programmatic-content-sites.md) | Agent generates and maintains long-tail reference pages, monetised with ads and affiliates | High | Medium to high | Parked. Free tier of plan 01 absorbs the viable part |
+| [03-marketplace-templates-and-skills.md](03-marketplace-templates-and-skills.md) | Package agents as sellable skills, MCP servers, and automation templates | Very high | Low to medium | **Active.** Public repo as Steerwell marketing |
+| [04-agent-generated-digital-products.md](04-agent-generated-digital-products.md) | Agent pipeline produces digital goods sold on marketplaces | Very high | Low | Parked. Marketplace AI policies tightening |
+
+Decisions about which plans to pursue are recorded in [DECISIONS.md](DECISIONS.md).
 
 ## Shared principles
 
@@ -38,7 +40,8 @@ Candidates for a common base that all four plans can reuse. See each plan's
 
 ## Suggested order
 
-Start with plan 03 or 04. Both have near-zero running cost, produce something sellable
-within days, and teach the tooling that plans 01 and 02 need. Move to plan 01 once a
-niche is chosen. Plan 02 has the longest payback and the most search-engine risk, so do
-it last or in parallel with a data product that can feed it pages.
+Decided 2026-10-20. Build plan 03 first as a public Steerwell repository, since it costs
+nothing to run and produces a visible artifact within two weeks. Use it to choose a niche
+and to seed an audience. Then build plan 01 as the revenue product, with the plan 03 repo
+and README as one of its lead channels. Plans 02 and 04 are parked; revisit only if the
+conditions noted in DECISIONS.md change.

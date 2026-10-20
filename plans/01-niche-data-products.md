@@ -250,7 +250,11 @@ commodity; the subscription sells normalisation, dedup, summaries, and alerts.
    reviews, and FDA warning letter recipients are lists of people who already pay for or
    need this data. Twenty personal emails a week with the sample attached is the plan
    for the first fifty customers.
-5. **Directories.** Datarade lists providers on a commission-only tier (a competitor
+5. **The Steerwell public repo (plan 03).** Decided 2026-10-20. The open-source skills
+   repo links to this product from its README and, where natural, from skill output.
+   Shared tooling that is safe to publish lives there; this pipeline's sources, parsers,
+   and schemas do not.
+6. **Directories.** Datarade lists providers on a commission-only tier (a competitor
    report cites 30 percent; unverified on Datarade's site) and deals close off-platform.
    The Apify Store is a second channel: publish a cut-down actor that sells per-record
    and upsells to the subscription. Product Hunt and Hacker News work once, for the
@@ -425,9 +429,10 @@ These need the owner's input. Everything else in this plan has a default.
    rises toward the Sonnet line. Decide the accuracy bar before the test.
 4. **Monthly spend cap.** The plan proposes $50 for LLM and $40 for infrastructure until
    the fifth paying customer. Confirm or change.
-5. **Public repo or private.** A public repo gets free GitHub Actions minutes and
-   credibility, but exposes the source list and parsers to copycats, and its cron
-   schedule auto-disables after 60 idle days. Default is private on a VPS.
+5. **Public repo or private.** Decided private for the pipeline. Credibility comes from
+   the public plan 03 repo instead, so this repo keeps its source list and parsers out of
+   view. Still open: whether to run on a VPS or private GitHub Actions (free minutes, but
+   cron auto-disables after 60 idle days).
 6. **Whether to publish an Apify actor as a lead channel.** It generates sales but also
    signals the sources to competitors.
 
